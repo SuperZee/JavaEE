@@ -14,6 +14,6 @@ public class MaxNumberTest {
 		// }
 		
 		// 或者使用断言
-		Assert.assertSame(6, max); // (期望值,真实值)
+		Assert.assertSame(5, max); // (期望值,真实值)
 	}
 }
