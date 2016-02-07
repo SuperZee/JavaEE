@@ -1,0 +1,21 @@
+package com.lee_01;
+
+import org.junit.After;
+import org.junit.Before;
+
+public class junitTest2 {
+	@Before
+	public void init() throws Exception{
+		System.out.println("Init...");
+		Thread.sleep(1000);
+		System.out.println("Init Finish");
+	}
+	
+	@After
+	public void finish() throws Exception{
+		System.out.println("Clear...");
+		Thread.sleep(1000);
+		System.out.println("Clear Finish");
+		
+	}
+}

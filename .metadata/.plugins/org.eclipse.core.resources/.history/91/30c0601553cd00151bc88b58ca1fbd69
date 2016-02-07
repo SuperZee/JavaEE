@@ -1,0 +1,30 @@
+package com.lee_01;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class junitTest2 {
+	@Before
+	public void init() throws Exception{
+		System.out.println("Init...");
+		Thread.sleep(1000);
+		System.out.println("Init Finish");
+	}
+	@Test
+	public void readFile() throws Exception{
+		FileInputStream fis = new FileInputStream("F://a.txt");
+		int content = fis.read();
+		fis.close();
+	}
+	@After
+	public void finish() throws Exception{
+		System.out.println("Clear...");
+		Thread.sleep(1000);
+		System.out.println("Clear Finish");
+		
+	}
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitTest2" project="junit测试单元" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.lee_01.junitTest2" time="3.402">
+    <testcase name="readFile" classname="com.lee_01.junitTest2" time="3.402"/>
+  </testsuite>
+</testrun>

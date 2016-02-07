@@ -1,0 +1,19 @@
+package com.lee_01;
+
+import org.junit.Before;
+
+public class junitTest2 {
+	@Before
+	public void initNum(){
+		int a = 100;
+		int b = 10;
+		String s = "Java";
+	}
+	
+	@After
+	public void finishNum(){
+		a = 0;
+		b = 0;
+		s = null;
+	}
+}
