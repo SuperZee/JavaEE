@@ -1,0 +1,7 @@
+package com.lee;
+
+public class MaxNumberTest {
+	public void testMax(){
+		new MaxNumber().max(5, 6);
+	}
+}

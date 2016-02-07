@@ -1,0 +1,30 @@
+package com.lee;
+
+import org.junit.Test;
+/*
+ * junit出现主要解决不需要去main方法上 测试代码的可靠性
+ */
+public class junitTest 
+{
+
+	  // 使用junit的标记
+	// 冒泡排序
+	@Test
+	public void sort(){
+		int[] arr = {-2,6,-7,19,4};
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] < arr[j]) {
+					int temp = arr[j];
+					arr[j] = arr[i];
+					arr[i] = temp;
+				}
+			}
+		}
+		for (int i : arr) {
+			System.out.print(i + ",");
+		}
+		//throw new RuntimeException(); 这里junit会显示红色 测试不通过
+		
+	}
+}

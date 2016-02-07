@@ -1,0 +1,10 @@
+package com.lee;
+
+public class MaxNumberTest {
+	public void testMax(){
+		int max = new MaxNumber().max(5, 6);
+		if(max != 6){
+			throw new RuntimeException();
+		}
+	}
+}
